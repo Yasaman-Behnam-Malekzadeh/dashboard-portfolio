@@ -1,23 +1,10 @@
-import logo from './logo.svg';
+
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='d-flex' style={{height:"100vh", backgroundColor:"#f9f4e6"}}>
+      <div className="App container border rounded-5 border-4 my-auto border-black p-3" style={{height:"80%"}}>test</div>
     </div>
   );
 }
