@@ -23,13 +23,37 @@ function LineChart() {
         label: "Entries per Date",
         data: labels.map((date) => countsByDate[date]),
         fill: false,
-        borderColor: "rgb(75, 192, 192)",
-        tension: 0.1,
+        borderColor: "black",
+        tension: 0.7,
       },
     ],
   };
 
-  return <Chart type="line" data={data} height={"200px"} width={"200px"} />;
+  const options = {
+    scales: {
+      y: {
+        min: 0,
+        grid: {
+          display: false, 
+        },
+      },
+      x: {
+        grid: {
+          display: false, 
+        },
+      },
+    },
+  };
+
+  return (
+    <Chart
+      type="line"
+      data={data}
+      height={"50px"}
+      width={"50px"}
+      options={options}
+    />
+  );
 }
 
 export default LineChart;
